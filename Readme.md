@@ -7,3 +7,4 @@
 - CyclicRotation
 - FrogJmp
 - PermMissingElem
+- TapeEquilibrium
