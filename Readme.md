@@ -6,3 +6,4 @@
 - OddOccurrencesInArray
 - CyclicRotation
 - FrogJmp
+- PermMissingElem
