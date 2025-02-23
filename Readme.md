@@ -8,3 +8,4 @@
 - FrogJmp
 - PermMissingElem
 - TapeEquilibrium
+- FrogRiverOne
