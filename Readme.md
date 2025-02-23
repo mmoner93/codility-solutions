@@ -10,3 +10,4 @@
 - TapeEquilibrium
 - FrogRiverOne
 - PermCheck
+- MissingInteger
