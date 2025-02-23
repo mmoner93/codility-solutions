@@ -9,3 +9,4 @@
 - PermMissingElem
 - TapeEquilibrium
 - FrogRiverOne
+- PermCheck
