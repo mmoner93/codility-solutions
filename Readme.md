@@ -31,3 +31,4 @@
 
 - Distinct
 - MaxProductOfThree
+- Triangle
