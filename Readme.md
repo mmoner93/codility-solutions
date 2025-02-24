@@ -30,3 +30,4 @@
 ## Lesson 6 - Sorting
 
 - Distinct
+- MaxProductOfThree
