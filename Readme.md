@@ -13,3 +13,4 @@
 - MissingInteger
 - MaxCounters
 - CountDiv
+- MinAvgTwoSlice
