@@ -32,3 +32,4 @@
 - Distinct
 - MaxProductOfThree
 - Triangle
+- NumberOfDiscIntersections
