@@ -33,3 +33,7 @@
 - MaxProductOfThree
 - Triangle
 - NumberOfDiscIntersections
+
+## Lesson 7 - Stacks and Queues
+
+- Brackets
