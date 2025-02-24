@@ -12,3 +12,4 @@
 - PermCheck
 - MissingInteger
 - MaxCounters
+- CountDiv
