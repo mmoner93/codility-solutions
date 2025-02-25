@@ -40,3 +40,7 @@
 - Fish
 - Nesting
 - StoneWall
+
+## Lesson 8 - Leader
+
+- Dominator
