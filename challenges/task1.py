@@ -1,0 +1,59 @@
+# A company has a list of expected revenues and payments for the upcoming
+# year in chronological order. The problem is that at some moments in time
+# the sum of previous payments can be larger than the total previous revenue.
+# This would put the company in debt. To avoid this problem the company
+# takes a very simple approach. It reschedules some expenses to the end of
+# the year.
+
+# You are given an array of integers, where positive numbers represent
+# revenues and negative numbers represent expenses, all in chronological
+# order. In one move you can relocate any expense (negative number) to the
+# end of the array. What is the minimum number of such relocations to make
+# sure that the company never falls into debt? In other words: you need to
+# make sure that there is no consecutive sequence of elements starting from
+# the beginning of the array, that sums up to a negative number.
+# You can assume that the sum of all elements in A is nonnegative.
+
+# Write a function:
+# def solution(A)
+# that, given an array A of N integers, returns the minimum number of
+# relocations, so that company never falls into debt.
+
+# Examples:
+# 1. Given A = [1 0, -10, -1, -1, 10], the function should return 1. It is enough to
+# move -10 to the end of the array.
+# 2. Given A = [-1, -1, -1, 1, 1, 1, 1], the function should return 3. The negative
+# elements at the beginning must be moved to the end to avoid debt at the
+# start of the year.
+# 3. Given A = [5, -2, -3, 1], the function should return 0. The company balance
+# is always nonnegative.
+
+
+def solution(A):
+    balance = 0
+    counter = 0
+    for i in range(len(A) - 1):
+        future_balance = balance + A[i] + A[i + 1]
+        if A[i] == 0:
+            pass
+        elif balance + A[i] < 0:
+            counter += 1
+            continue
+        elif future_balance < 0:
+            i += 1
+            counter += 1
+            continue
+        balance += A[i]
+    return counter
+
+
+print(solution([10, -10, -1, -1, 10]))  # 1
+print(solution([-1, -1, -1, 1, 1, 1, 1]))  # 3
+print(solution([5, -2, -3, 1]))  # 0
+print(solution([10, -2, -3, -10]))  # 0
+print(solution([1, 0, -10, -1, -1, 10]))  # 1
+print(solution([1, 0, -10, -1, -1, 10, -1]))  # 2
+print(solution([1, 0, -10, -1, -1, 10, -1, 1]))  # 2
+print(solution([17, 0, -10, -1, -1, 10, -1, 1]))  # 2
+print(solution([17, 0, -17, -1, -1, 10, -1, 1]))  # 3
+print(solution([-17, 0, -17, -1, -1, 10, -1, 1, 1]))  # 3

@@ -44,3 +44,8 @@
 ## Lesson 8 - Leader
 
 - Dominator
+
+## Microsoft Codility Test
+
+- Task 1
+- Task 2
