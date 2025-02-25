@@ -37,3 +37,4 @@
 ## Lesson 7 - Stacks and Queues
 
 - Brackets
+- Fish
